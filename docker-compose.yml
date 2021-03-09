@@ -1,0 +1,15 @@
+version: '3'
+ 
+services:
+  haproxy:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./config:/usr/local/etc/haproxy/
+      - /etc/letsencrypt/:/etc/ssl/
+    networks:
+      - proxy-net
+
+networks:
+  proxy-net:

@@ -1,0 +1,4 @@
+SSL Termination
+- https://certbot.eff.org/lets-encrypt/centosrhel7-haproxy#wildcard
+  - certbot certonly --dns-google --dns-google-credentials ~/.secrets/certbot/google.json -d soroosh.dev 
+- create symlink on privkey because haproxy config is not smart enough to ask for privkey file and assumes its fullchain.pem.key
