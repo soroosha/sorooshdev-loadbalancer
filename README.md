@@ -2,7 +2,7 @@
 
 - make sure proxy network is synced  between this loadbalancers container and included projects 
 
-  - a project external network ID should be <this projects name>_<network name used in this project's docker-compose> 
+  - a project external network ID should be __(this projects name)_(network name used in this project's docker-compose)__
 
 
 ## SSL Termination  
@@ -13,4 +13,4 @@
 
 - create symlink on privkey because haproxy config is not smart enough to ask for privkey file and assumes its fullchain.pem.key 
 
-- make sure DNS A/AAAA records are added for *.<domain> 
+- make sure DNS A/AAAA records are added for __*.(domain)__
